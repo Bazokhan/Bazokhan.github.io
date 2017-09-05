@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arrays</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/mui.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mui-container">
+            <div class="mui-appbar mui--appbar-line-height">     
+                <a href="index.html"><span id="title" class="mui--text-title ">Array.prototype.method()</span></a>
+            </div>
+            <div class="mui-row">
+                <!-- side-list -->
+                <div class="mui-col-md-3">
+                    <p class="plain-text">Welcome! Let's begin exploring different Array.prototype methods and learn how they work..</p>
+                    <p class="plain-text mui--visible-sm-block mui--visible-xs-block">We start with an example array called <strong>my_Array</strong>. You can now choose a method by clicking on the <strong>Methods</strong> button and clicking on a certain method name to invoke it on my_Array. I've provided default arguments to these methods, you can check them by clicking on the <strong>More</strong> button down below to see the actual syntax executed. You can also change the my_Array to whatever you like by clicking the <strong>Edit</strong> button below it. Now let's refresh our memories about array methods !</p>
+                    <ul id="buttons" class="mui-panel"><li id="toggle" class="mui-btn mui-btn--danger">Methods</li></ul>
+                    <p class="plain-text mui--visible-md-block mui--visible-lg-block mui--visible-xl-block">We start with an example array called <strong>my_Array</strong>. You can now choose a method by clicking on the <strong>Methods</strong> button and clicking on a certain method name to invoke it on my_Array. I've provided default arguments to these methods, you can check them by clicking on the <strong>More</strong> button down below to see the actual syntax executed. You can also change the my_Array to whatever you like by clicking the <strong>Edit</strong> button below it. Now let's refresh our memories about array methods !</p>
+                </div>
+                <!-- main-body -->
+                <div class="mui-col-md-9">
+                    <!-- original-array and user-input buttons -->
+                    <div class="mui-panel mui--text-center">
+                        <div id="error"></div>
+                        <h2 class="mui--text-title">my_Array</h2>
+                        <div class="mui-divider"></div>
+                        <div id="original-array" class="mui--text-title">
+                            <div id="user-input"></div>
+                            <div>
+                                <span class="mui-btn mui-btn--primary mui-btn--flat user" style="display: block">Edit</span>
+                                <span class="mui-btn mui-btn--primary mui-btn--flat user" style="display: none">Save</span>
+                                <span class="mui-btn mui-btn--primary mui-btn--flat user" style="display: none">Cancel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- current-button and result-display area -->
+                    <div id="current-button"><p class="mui--text-center">Choose a method from the list<p></div>
+                    
+                    <div class="mui-panel mui--text-center">
+                        <h2 id="result" class="mui--text-title">Result</h2>
+                        <div class="mui-divider"></div>
+                        <p id="return" class="mui--text-title">Invoke the method by clicking on its name to see what it does to my_Array!</p>
+                        <p id="mutate" class="mui--text-title">I wonder what each method really returns!</p>
+                        <p id="new-arr" class="mui--text-title"></p>
+                    </div>
+                    <!-- more-info -->
+                    <div id="show-info"></div>
+                    <div id="brief"></div>
+                    <div id="syntax"></div>
+                <!-- end main-body -->
+                </div>
+            </div>
+            <div class="footer mui--text-center">     
+                <span>Designed and developed by a Javascript hobbyist <a href="#">Mohamad Albaz</a> 2017</span>
+            </div>
+        </div>
+        <script src="js/db.js"></script>
+        <script src="js/dom.js"></script>
+        <script src="js/user.js"></script>
+        
+    </body>
+</html>
